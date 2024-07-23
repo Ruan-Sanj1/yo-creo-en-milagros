@@ -1,0 +1,83 @@
+HTML:
+# Esto es lo que habrá en el sitio web, las imágenes, textos, botones y otra información, todo representado por "tag".
+
+# Cómo funciona: Todo lo que está entre <tag> pertenece a esa "tag", que es un cuadro que realiza una función, como los que aparecen debajo de </tag>
+
+<h1>Encabezado principal, el siguiente encabezado sería h2, luego h3 y así sucesivamente</h1>
+
+<p>Texto que hay en el sitio web</p>
+
+<img src="local/nombre-de-la-imágen.png" alt="Descripción de lo que hay en la imagen> crea una imagen.
+
+<section class="nombre"> Es una sección del sitio web y "class=" se utiliza para darle un nombre. </sección>
+
+<div class="nombre"> En este ejemplo, es un divisor con el nombre "nombre" </div>
+
+<buttton> Crea un botón </button>
+
+<input type="tipoDeEntrada"> crea un campo donde puede escribir y recopilar o mostrar información. Algunos de los tipos de entrada son texto, palabra y contraseña.
+
+<tag id="nomeDoID"> Da una identificación a esa etiqueta, que funciona de manera similar a "clase". En CSS, llamamos a la identificación con #IDName{}.
+
+<label for="nombreDeLaTag"> Crea una etiqueta junto a la "tag" que tiene el nombre mencionado en el "for".
+
+<tag name="nombre"> Asigna un nombre a la tag.
+
+<a href="google.com"> Puede hacer clic en lo que esté dentro de esta "tag" para acceder al sitio web que contiene </a>
+
+# La "tag" termina en </tag>
+
+------------------------------------------------------------------------------
+CSS:
+#Aquí está todo el estilo del sitio, incluyendo los colores, tamaño de las letras, espacio entre las "tag" y demás...
+
+#Para modificar un elemento HTML, escribimos el nombre de su clase después de un punto, y luego colocamos sus características dentro de la clave que sigue, así:
+.Nombre-de-la-clase{
+    característica;
+    font-size: 12px;
+}
+
+#Algunas de las características más comunes:
+
+color: color de letra
+
+font-size: tamaño de fuente.
+
+font-weigth: peso de fuente.
+
+margin: margen alrededor.
+
+padding: espacio interior.
+
+width: ancho
+
+height: altura
+
+text-align:center; alinear el texto en el centro
+
+border: color 6px; Crea un borde en la "tag" del color elegido. (También se puede utilizar el borde inferior o el borde superior)
+
+#Variables: las variables son valores que almacenamos dentro de una palabra determinada. Para ello lo ponemos al principio de "style.css" escrito así:
+:root{
+    nombre-variable: su valor;
+} 
+
+#Para posicionar algo dentro de una caja usamos "justify-content", "align-items" o "flex-direction", siempre y cuando previamente hayamos escrito "display:flex" lo que significa que podemos reposicionar lo que hay dentro de esa caja . A continuación se muestra cada uno de ellos y cómo funcionan (eje x = izquierda y derecha; eje y = arriba y abajo)
+
+ La propiedad CSS "justify-content" posiciona los elementos del cuadro en el eje x usando los valores:
+*flex-start; agrupa los elementos al comienzo del eje x del cuadro.
+*flex-end; agrupa los elementos al final del eje x del cuadro.
+*center; agrupa los elementos en el centro del eje x del cuadro.
+*space-between: distribuye los elementos equitativamente en el eje x, dejando el primero cerca del principio y el último cerca del final;
+*space-around; distribuye los elementos en el eje x, dejando igual espacio entre todos ellos.
+
+"align-items" posiciona los elementos a lo largo del eje y y acepta los siguientes valores:
+*flex-start; Coloca los elementos al principio del eje y del cuadro.
+*flex-end; posiciona los elementos al final del eje y del cuadro.
+*center; Coloca los elementos en el centro del eje y del cuadro.
+
+La propiedad "flex-direction" cambia la forma en que se dirigen los elementos entre fila y columna y acepta los siguientes valores:
+*row; Coloca elementos en una fila.
+*row-reverse; coloca los elementos al revés en la línea.
+*column; Coloca elementos en una columna.
+*column-reverse; coloca los elementos al revés en la columna;
